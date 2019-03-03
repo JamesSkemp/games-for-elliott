@@ -1,0 +1,34 @@
+{
+	"name": "starter-v3-vsc-ts-node",
+	"version": "0.0.1",
+	"description": "Starter Project for Phaser 3 with TypeScript, NodeJS, and VS Code.",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com:JamesSkemp/phaser-starter-templates.git"
+	},
+	"private": true,
+	"author": {
+		"name": "James Skemp",
+		"email": "strivinglife@gmail.com",
+		"url": "https://jamesrskemp.com"
+	},
+	"homepage": "https://github.com/JamesSkemp/phaser-starter-templates",
+	"dependencies": {
+		"phaser": "^3.16.2"
+	},
+	"scripts": {
+		"build": "webpack --mode production",
+		"build-dev": "webpack --mode none",
+		"start:dev": "webpack-dev-server --mode production"
+	},
+	"devDependencies": {
+		"clean-webpack-plugin": "^1.0.1",
+		"copy-webpack-plugin": "^5.0.0",
+		"ts-loader": "^5.3.3",
+		"tslint": "^5.13.1",
+		"typescript": "^3.3.3333",
+		"webpack": "^4.29.6",
+		"webpack-cli": "^3.2.3",
+		"webpack-dev-server": "^3.2.1"
+	}
+}
