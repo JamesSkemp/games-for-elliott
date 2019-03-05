@@ -1,5 +1,10 @@
 # Games for Elliott
 
+## Resources
+- [Carlito font](https://fontlibrary.org/en/font/carlito)
+
+# Original Content of the README
+
 The following is a starter project to get started with a new game in Phaser 3 and Visual Studio Code, using TypeScript and NodeJS.
 
 > Since Phaser 3 does not yet bundle the TypeScript defintions, if you are copying this directory you will also need to copy the Phaser defintions file one directory level up.
