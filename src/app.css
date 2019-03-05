@@ -1,4 +1,8 @@
 ﻿/* If styling is required, add it here. */
+@font-face {
+	font-family: 'Carlito';
+	src: url(./assets/fonts//google-crosextrafonts-carlito-20130920/Carlito-Regular.ttf) format('truetype');
+}
 body {
 	background-color: #111;
 	color: #eee;

@@ -4,13 +4,14 @@ import Preloader from "./Scenes/Preloader";
 import MainMenu from "./Scenes/MainMenu";
 import SplashScreen from "./Scenes/SplashScreen";
 import Utilities from "./Utilities";
+import AlphabetGame from "./Scenes/AlphabetGame";
 
 const gameConfig: GameConfig = {
 	width: 800,
 	height: 600,
 	type: Phaser.AUTO,
 	parent: "content",
-	title: "Starter Project for Phaser 3 with Visual Studio Code, TypeScript, and NodeJS"
+	title: "Games for Elliott"
 };
 
 export default class Game extends Phaser.Game {
@@ -23,6 +24,7 @@ export default class Game extends Phaser.Game {
 		this.scene.add(Preloader.Name, Preloader);
 		this.scene.add(SplashScreen.Name, SplashScreen);
 		this.scene.add(MainMenu.Name, MainMenu);
+		this.scene.add(AlphabetGame.Name, AlphabetGame);
 		this.scene.start(Boot.Name);
 	}
 }
