@@ -18,6 +18,8 @@ export default class Preloader extends Phaser.Scene {
 		for (let i = 0; i < 100; i++) {
 			this.load.image("Phaser-Logo-Small" + i, "Phaser-Logo-Small.png");
 		}
+
+		this.load.audio("alphabet_song_1_dad", ["audio/Alphabet Song 1 Dad.ogg", "audio/Alphabet Song 1 Dad.mp3"]);
 	}
 
 	public create(): void {

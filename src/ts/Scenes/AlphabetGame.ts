@@ -5,6 +5,11 @@ export default class AlphabetGame extends Phaser.Scene {
 	 * Unique name of the scene.
 	 */
 	public static Name: string = "AlphabetGame";
+	/**
+	 * Track whether a sound is currently playing.
+	 */
+	private soundPlaying: boolean = false;
+	private alphabetSound;
 
 	public preload(): void {
 		// Preload as needed.
@@ -48,7 +53,9 @@ export default class AlphabetGame extends Phaser.Scene {
 	 * Plays a letter.
 	 */
 	public playLetter(letter: string): void {
-		console.log(arguments);
+		if (!this.soundPlaying) {
+			console.log(arguments);
+		}
 		// TODO
 	}
 
@@ -56,8 +63,19 @@ export default class AlphabetGame extends Phaser.Scene {
 	 * Plays an alphabet song.
 	 */
 	public playSong(): void {
-		// TODO make sure the song isn't already playing
-		// TODO play song
-		console.log("Play Song");
+		if (!this.soundPlaying) {
+			this.soundPlaying = true;
+			const song = this.sound.add("alphabet_song_1_dad");
+			console.log(song.duration);
+			console.log(song.totalDuration);
+			song.on("complete", (sound) => {
+				console.log(sound);
+				console.log("complete");
+				this.soundPlaying = false;
+				song.destroy();
+			});
+			console.log("Play Song");
+			song.play();
+		}
 	}
 }
