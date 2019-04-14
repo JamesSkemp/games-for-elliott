@@ -35,13 +35,13 @@ export default class AlphabetGame extends Phaser.Scene {
 		for (let i = 0; i < row2Letters.length; i++) {
 			this.add.text(leftPadding + letterSpacing * i, 225, row2Letters[i])
 				.setFontFamily("Carlito").setFontSize(letterSize).setOrigin(0.5)
-				.setInteractive().on("pointerdown", () => { this.playLetter(row1Letters[i]); }, this);
+				.setInteractive().on("pointerdown", () => { this.playLetter(row2Letters[i]); }, this);
 		}
 
 		for (let i = 0; i < row3Letters.length; i++) {
 			this.add.text(leftPadding + letterSpacing * i + (letterSpacing / 2), 350, row3Letters[i])
 				.setFontFamily("Carlito").setFontSize(letterSize).setOrigin(0.5)
-				.setInteractive().on("pointerdown", () => { this.playLetter(row1Letters[i]); }, this);
+				.setInteractive().on("pointerdown", () => { this.playLetter(row3Letters[i]); }, this);
 		}
 
 		this.add.text(this.cameras.main.centerX, 500, "SONG")
