@@ -20,6 +20,10 @@ export default class Preloader extends Phaser.Scene {
 		}
 
 		this.load.audio("alphabet_song_1_dad", ["audio/Alphabet Song 1 Dad.ogg", "audio/Alphabet Song 1 Dad.mp3"]);
+		const alphabetLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+		alphabetLetters.forEach((letter) => {
+			this.load.audio("alphabet_letter_dad_" + letter, ["audio/dad/Letter " + letter + ".ogg", "audio/dad/Letter " + letter + ".mp3"]);
+		});
 	}
 
 	public create(): void {

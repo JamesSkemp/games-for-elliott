@@ -54,6 +54,12 @@ export default class AlphabetGame extends Phaser.Scene {
 	 */
 	public playLetter(letter: string): void {
 		if (!this.soundPlaying) {
+			const song = this.sound.add("alphabet_letter_dad_" + letter);
+			song.on("complete", (sound) => {
+				this.soundPlaying = false;
+				song.destroy();
+			});
+			song.play();
 			console.log(arguments);
 		}
 		// TODO
