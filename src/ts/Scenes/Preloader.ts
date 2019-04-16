@@ -14,11 +14,6 @@ export default class Preloader extends Phaser.Scene {
 		this.load.image("phaser_pixel_medium_flat");
 		this.load.image("Phaser-Logo-Small");
 
-		// You should remove this logic; this is only included here to show off the progress bar.
-		for (let i = 0; i < 100; i++) {
-			this.load.image("Phaser-Logo-Small" + i, "Phaser-Logo-Small.png");
-		}
-
 		this.load.audio("alphabet_song_1_dad", ["audio/Alphabet Song 1 Dad.ogg", "audio/Alphabet Song 1 Dad.mp3"]);
 		const alphabetLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 		alphabetLetters.forEach((letter) => {
