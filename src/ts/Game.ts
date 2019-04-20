@@ -10,6 +10,10 @@ const gameConfig: GameConfig = {
 	width: 800,
 	height: 600,
 	type: Phaser.AUTO,
+	scale: {
+		mode: Phaser.Scale.FIT,
+		autoCenter: Phaser.Scale.CENTER_BOTH
+	},
 	parent: "content",
 	title: "Games for Elliott"
 };
