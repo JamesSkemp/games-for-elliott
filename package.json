@@ -1,7 +1,7 @@
 {
 	"name": "starter-v3-vsc-ts-node",
 	"version": "0.0.1",
-	"description": "Starter Project for Phaser 3 with TypeScript, NodeJS, and VS Code.",
+	"description": "Games for Elliott",
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://git@github.com:JamesSkemp/phaser-starter-templates.git"
